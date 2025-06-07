@@ -4,7 +4,7 @@ import { FaRegHeart, FaRegEye } from "react-icons/fa";
 // import useCartStore from "../store/useCartStore";
 import formatter from "../utils/currencyFormatter";
 
-const Product = ({ id, image, name, price, rating }) => {
+const Product = ({ id, image, name, price }) => {
 	const navigate = useNavigate();
 	// const { addToCart } = useCartStore();
 
