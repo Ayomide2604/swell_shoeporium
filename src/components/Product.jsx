@@ -1,6 +1,5 @@
 import { Link, useNavigate } from "react-router-dom";
 import { MdOutlineShoppingCart } from "react-icons/md";
-import Rating from "./Rating";
 import { FaRegHeart, FaRegEye } from "react-icons/fa";
 // import useCartStore from "../store/useCartStore";
 import formatter from "../utils/currencyFormatter";
@@ -53,9 +52,6 @@ const Product = ({ id, image, name, price, rating }) => {
 					<MdOutlineShoppingCart />
 					Add To Cart
 				</a>
-				<div className="rating">
-					<Rating rating={rating} />
-				</div>
 				<h5>{formatter.format(price)}</h5>
 			</div>
 		</div>
