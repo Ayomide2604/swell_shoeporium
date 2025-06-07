@@ -2,7 +2,6 @@ import { useEffect, useState } from "react";
 import { useParams, Link } from "react-router-dom";
 import { IoMdHeart, IoMdHeartEmpty } from "react-icons/io";
 import BreadCrumb from "../components/BreadCrumb";
-import Rating from "../components/Rating";
 import RelatedProducts from "../pages/RelatedProducts";
 import useProductStore from "../store/useProductStore";
 // import useCartStore from "../store/useCartStore";
@@ -81,7 +80,6 @@ const ProductDetailScreen = () => {
 								/>
 								<h3 className="text-left">{formatter.format(product.price)}</h3>
 								<div className="rating d-flex align-items-center">
-									<Rating rating={4} />
 									<span> - 5 Reviews</span>
 								</div>
 
